@@ -6,8 +6,8 @@
 //
 #if !BOOST_PP_IS_ITERATING
 
-    #ifndef BOOST_DI_INJECTOR_HPP
-    #define BOOST_DI_INJECTOR_HPP
+    #ifndef BOOST_DI_INJECTOR_HPP2
+    #define BOOST_DI_INJECTOR_HPP2
 
     #include "boost/di/aux_/config.hpp"
     #include "boost/di/detail/module.hpp"
@@ -106,7 +106,7 @@
             return injector<>();
         }
 
-        #define BOOST_PP_FILENAME_1 "boost/di/injector.hpp"
+        #define BOOST_PP_FILENAME_1 "runtime/injector.hpp"
         #define BOOST_PP_ITERATION_LIMITS BOOST_DI_TYPES_MPL_LIMIT_FROM(1)
         #include BOOST_PP_ITERATE()
     };
